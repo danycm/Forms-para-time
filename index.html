@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pesquisa de Análise de Dados</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      @layer base {
+        input[type="radio"]:checked {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+        }
+        input[type="checkbox"]:checked {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+        }
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2b8cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#333333] dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col items-center">
+<main class="w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+<!-- Top Nav Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-white/10 px-6 py-4">
+<div class="flex items-center gap-4 text-gray-800 dark:text-white">
+<span class="material-symbols-outlined text-xl text-primary">bar_chart</span>
+<h1 class="text-lg font-bold">Pesquisa de Análise de Dados</h1>
+</div>
+</header>
+<div class="mt-8 flex flex-col gap-8 rounded-lg border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-background-dark/50 sm:p-8">
+<!-- Page Heading -->
+<div class="flex flex-wrap items-start justify-between gap-4">
+<div class="flex flex-col gap-2">
+<h2 class="text-3xl font-black text-gray-900 dark:text-white">Votação Trimestral de Ferramentas</h2>
+<p class="text-gray-500 dark:text-gray-400">Ajude-nos a entender melhor as ferramentas e os desafios do nosso time de dados. Sua opinião é fundamental para nossas decisões futuras.</p>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<p class="text-sm font-medium text-gray-700 dark:text-gray-300">Progresso</p>
+<p class="text-sm font-medium text-primary">25%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-gray-200 dark:bg-white/10">
+<div class="h-2 rounded-full bg-primary" style="width: 25%"></div>
+</div>
+</div>
+<!-- Section: Ferramentas e Utilização -->
+<div class="flex flex-col gap-6">
+<h3 class="border-b border-gray-200 pb-3 text-xl font-bold text-gray-800 dark:border-white/10 dark:text-white">Ferramentas e Utilização</h3>
+<!-- Question 1: RadioList -->
+<div class="flex flex-col gap-3">
+<label class="font-semibold text-gray-800 dark:text-gray-200">Qual ferramenta de BI você mais utiliza?</label>
+<div class="flex flex-col gap-3">
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Power BI</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Tableau</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Google Data Studio</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Outra</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Section: Desafios e Métricas -->
+<div class="flex flex-col gap-6">
+<h3 class="border-b border-gray-200 pb-3 text-xl font-bold text-gray-800 dark:border-white/10 dark:text-white">Desafios e Métricas</h3>
+<!-- Question 2: Checkbox List -->
+<div class="flex flex-col gap-3">
+<label class="font-semibold text-gray-800 dark:text-gray-200">Quais métricas você acompanha diariamente? (Selecione todas que se aplicam)</label>
+<div class="flex flex-col gap-3">
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Receita Diária</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Usuários Ativos (DAU)</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Taxa de Conversão</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-300">Custo de Aquisição de Cliente (CAC)</span>
+</label>
+</div>
+</div>
+<!-- Question 3: Number Input -->
+<div class="flex flex-col gap-2">
+<label class="font-semibold text-gray-800 dark:text-gray-200" for="hours-input">Quantas horas por semana você dedica à criação de relatórios?</label>
+<input class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="hours-input" placeholder="Ex: 8" type="number"/>
+<p class="text-xs text-gray-500 dark:text-gray-400">Insira um valor numérico.</p>
+</div>
+<!-- Question 4: Text Area -->
+<div class="flex flex-col gap-2">
+<label class="font-semibold text-gray-800 dark:text-gray-200" for="challenge-textarea">Descreva o maior desafio que você enfrenta na análise de dados.</label>
+<textarea class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="challenge-textarea" placeholder="Descreva aqui seu principal desafio..." rows="4"></textarea>
+</div>
+</div>
+<!-- CTA Button -->
+<div class="mt-4 flex justify-end border-t border-gray-200 pt-6 dark:border-white/10">
+<button class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:ring-offset-background-dark">
+<span>Enviar Respostas</span>
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-8 text-center">
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Sua Empresa. Todos os direitos reservados. <a class="text-primary hover:underline" href="#">Política de Privacidade</a>.</p>
+</footer>
+</main>
+</div>
+</body></html>
