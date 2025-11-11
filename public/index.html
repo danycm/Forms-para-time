@@ -46,7 +46,7 @@
 <h1 class="text-lg font-bold">Pesquisa de Análise de Dados</h1>
 </div>
 </header>
-<div class="mt-8 flex flex-col gap-8 rounded-lg border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-background-dark/50 sm:p-8">
+<form id="survey-form" class="mt-8 flex flex-col gap-8 rounded-lg border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-background-dark/50 sm:p-8">
 <!-- Page Heading -->
 <div class="flex flex-wrap items-start justify-between gap-4">
 <div class="flex flex-col gap-2">
@@ -72,19 +72,19 @@
 <label class="font-semibold text-gray-800 dark:text-gray-200">Qual ferramenta de BI você mais utiliza?</label>
 <div class="flex flex-col gap-3">
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio" value="Power BI"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Power BI</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio" value="Tableau"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Tableau</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio" value="Google Data Studio"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Google Data Studio</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio"/>
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="bi_tool" type="radio" value="Outra"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Outra</span>
 </label>
 </div>
@@ -98,19 +98,19 @@
 <label class="font-semibold text-gray-800 dark:text-gray-200">Quais métricas você acompanha diariamente? (Selecione todas que se aplicam)</label>
 <div class="flex flex-col gap-3">
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox" value="Receita Diária"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Receita Diária</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox" value="Usuários Ativos (DAU)"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Usuários Ativos (DAU)</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox" value="Taxa de Conversão"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Taxa de Conversão</span>
 </label>
 <label class="flex cursor-pointer items-center gap-4 rounded-lg border border-gray-300 p-4 ring-primary/50 transition-all has-[:checked]:border-primary has-[:checked]:ring-2 dark:border-white/20 dark:has-[:checked]:border-primary">
-<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox"/>
+<input class="h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-transparent checked:border-primary checked:bg-primary focus:outline-none dark:border-white/30" name="metrics" type="checkbox" value="Custo de Aquisição de Cliente (CAC)"/>
 <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Custo de Aquisição de Cliente (CAC)</span>
 </label>
 </div>
@@ -118,27 +118,28 @@
 <!-- Question 3: Number Input -->
 <div class="flex flex-col gap-2">
 <label class="font-semibold text-gray-800 dark:text-gray-200" for="hours-input">Quantas horas por semana você dedica à criação de relatórios?</label>
-<input class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="hours-input" placeholder="Ex: 8" type="number"/>
+<input class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="hours-input" name="hours-input" placeholder="Ex: 8" type="number"/>
 <p class="text-xs text-gray-500 dark:text-gray-400">Insira um valor numérico.</p>
 </div>
 <!-- Question 4: Text Area -->
 <div class="flex flex-col gap-2">
 <label class="font-semibold text-gray-800 dark:text-gray-200" for="challenge-textarea">Descreva o maior desafio que você enfrenta na análise de dados.</label>
-<textarea class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="challenge-textarea" placeholder="Descreva aqui seu principal desafio..." rows="4"></textarea>
+<textarea class="w-full rounded-lg border border-gray-300 bg-background-light px-4 py-2 text-gray-800 focus:border-primary focus:ring-2 focus:ring-primary/50 dark:border-white/20 dark:bg-background-dark dark:text-gray-200 dark:placeholder:text-gray-500" id="challenge-textarea" name="challenge-textarea" placeholder="Descreva aqui seu principal desafio..." rows="4"></textarea>
 </div>
 </div>
 <!-- CTA Button -->
 <div class="mt-4 flex justify-end border-t border-gray-200 pt-6 dark:border-white/10">
-<button class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:ring-offset-background-dark">
+<button type="submit" class="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:ring-offset-background-dark">
 <span>Enviar Respostas</span>
 <span class="material-symbols-outlined">send</span>
 </button>
 </div>
-</div>
+</form>
 <!-- Footer -->
 <footer class="mt-8 text-center">
 <p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Sua Empresa. Todos os direitos reservados. <a class="text-primary hover:underline" href="#">Política de Privacidade</a>.</p>
 </footer>
 </main>
 </div>
+<script src="script.js"></script>
 </body></html>

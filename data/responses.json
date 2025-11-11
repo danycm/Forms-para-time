@@ -1,0 +1,22 @@
+[
+  {
+    "bi_tool": "Power BI",
+    "metrics": [
+      "Receita Diária",
+      "Usuários Ativos (DAU)"
+    ],
+    "hours": null,
+    "challenge": null,
+    "timestamp": "2025-11-11T17:52:25.052Z"
+  },
+  {
+    "bi_tool": "Power BI",
+    "metrics": [
+      "Receita Diária",
+      "Usuários Ativos (DAU)"
+    ],
+    "hours": "10",
+    "challenge": "This is a test submission.",
+    "timestamp": "2025-11-11T17:55:04.521Z"
+  }
+]
